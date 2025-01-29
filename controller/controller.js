@@ -32,6 +32,7 @@ export default class userRequests{
 
     async getMenu(req,res)
     {
+        
         try{
             const data=await Menu.find()
             res.status(200).json({status:true,message:"data found",data:data})
